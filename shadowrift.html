@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow Rift - Clothing Brand</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background: black;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        header img {
+            height: 50px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background: #333;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .search-box {
+            margin: 10px;
+            text-align: center;
+        }
+        .search-box input {
+            padding: 8px;
+            width: 200px;
+            font-size: 16px;
+        }
+        .search-box button {
+            padding: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .hero {
+            background: url('hero-image.jpg') no-repeat center;
+            background-size: cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 36px;
+            font-weight: bold;
+            flex-direction: column;
+        }
+        .quote {
+            margin-top: 10px;
+            font-size: 20px;
+            font-style: italic;
+            color: #ddd;
+        }
+        .container {
+            padding: 20px;
+        }
+        .footer {
+            background: #222;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <script>
+        function searchFunction() {
+            let input = document.getElementById("search").value.toLowerCase();
+            alert("Searching for: " + input);
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="shadow_rift_logo.png" alt="Shadow Rift Logo">
+        Shadow Rift - Unleash the Style
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="search-box">
+        <input type="text" id="search" placeholder="Search products...">
+        <button onclick="searchFunction()">Search</button>
+    </div>
+    <div class="hero">
+        Shadow Rift Collection
+        <div class="quote">"Step into the shadows, emerge in style."</div>
+    </div>
+    <div class="container" id="home">
+        <h2>Welcome to Shadow Rift</h2>
+        <p>Discover the latest trends in streetwear and fashion.</p>
+    </div>
+    <div class="container" id="shop">
+        <h2>Shop Now</h2>
+        <p>Explore our exclusive collection.</p>
+    </div>
+    <div class="container" id="about">
+        <h2>About Us</h2>
+        <p>Shadow Rift was created to redefine fashion with bold and unique styles.</p>
+    </div>
+    <div class="container" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@shadowrift.com</p>
+    </div>
+    <div class="footer">&copy; 2025 Shadow Rift. All rights reserved.</div>
+</body>
+</html>
